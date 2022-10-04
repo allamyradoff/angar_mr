@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Cards</title>
+
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top" style="scroll-behavior: auto;">
+
+    <div id="wrapper">
+        {% include 'inc/sidebar.html' %}
+
+        <div id="content-wrapper">
+
+            <div id="content">
+
+
+
+                <div class="container-fluid">
+
+
+
+                    <div class="row">
+
+                        <div class="col-xl-3 col-md-12 mb-4">
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">Awtozapchas Gosh </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="container">
+                    <form class="row g-3" style="display: flex; flex-direction: column;" method="POST">
+                        {% csrf_token %}
+                        {{form}}
+
+
+                        
+                        <div class="container" style="margin-top: 1%;">
+                            <label for="exampleFormControlTextarea1" style="margin-top:1%">Haýsy yagdayy
+                                Sayla</label>
+                            <div class="row">
+                                <div class="col-sm">
+                                    <a class="btn btn-primary"><i class="fa fa-star">1</i></a>
+                                    <a class="btn btn-primary"><i class="fa fa-star">2</i></a>
+                                    <a class="btn btn-primary"><i class="fa fa-star">3</i></a>
+                                    <a class="btn btn-primary"><i class="fa fa-star">4</i></a>
+                                    <a class="btn btn-primary"><i class="fa fa-star">5</i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex" style="margin-top: 1%;">
+                            <div class="col-md-6">
+                                <a href="#cars_id_name" class="btn btn-primary" style="color: #fff;"
+                                            onclick='document.getElementById("cars_id_name").style.display  = "flex";'>Hasy mashyna degishliligi sayla</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#cart_id_name" class="btn btn-primary" style="color: #fff;"
+                                            onclick='document.getElementById("cart_id_name").style.display  = "flex";'>Haysy kategoriya degishliligi sayla</a>
+                            </div>
+                        </div>
+    
+
+
+
+                            <div class="col-12" style="margin-top: 2%">
+                                <button type="submit" class="btn btn-danger">Ugrat</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+                {% include 'cars_category.html'%}
+                {% include 'cars.html'%}
+
+
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const buttons = document.getElementsByClassName("btn");
+        console.log(buttons)
+
+    </script>
+
+
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
+
+    <script src="{% static 'vendor/datatables/jquery.dataTables.min.js' %}"></script>
+    <script src="{% static 'vendor/datatables/dataTables.bootstrap4.min.js' %}"></script>
+
+    <script src="{% static 'js/demo/datatables-demo.js' %}"></script>
+
+
+
+
+</body>
+
+</html>

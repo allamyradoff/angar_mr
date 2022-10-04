@@ -1,0 +1,47 @@
+{% load static %}
+
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+        <div class="sidebar-brand-icon rotate-n-15">
+            <i class="fas fa-laugh-wink"></i>
+        </div>
+        <div class="sidebar-brand-text mx-3">{{request.user.username}} <sup></sup></div>
+
+    </a>
+
+    <hr class="sidebar-divider my-0">
+
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'create_zapcas' %}">
+            <i class="fa fa-plus"></i>
+            <span>Zapchas gosh</span></a>
+    </li>
+
+    {% comment %} <li class="nav-item active">
+        <a class="nav-link" href="{% url 'add_cars' %}">
+            <i class="fa fa-plus"></i>
+            <span>Mashyn gosh</span></a>
+    </li> {% endcomment %}
+
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'zapcas_list' %}">
+            <i class="fas fa-store-alt"></i>
+            <span>Zapchaslar</span></a>
+    </li>
+
+    {% comment %} <li class="nav-item active">
+        <a class="nav-link" href="{% url 'cars_list' %}">
+            <i class="fas fa-store-alt"></i>
+            <span>Mashynlar</span></a>
+    </li> {% endcomment %}
+
+    <hr class="sidebar-divider">
+    <li class="nav-item active"><a class="nav-link" href="/" >
+            <i class="fa fa-sign-out" style="font-size:24px"></i>
+            <span>Çykmak</span></a>
+    </li>
+
+
+
+</ul>
